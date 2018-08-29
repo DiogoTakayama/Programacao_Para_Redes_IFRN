@@ -1,0 +1,13 @@
+Ganho=float(input("Quanto ganha por Hora?"))
+HorasTrabalhadas = int(input('Horas trabalhadas por mes: '))
+
+SalarioBruto = Ganho * HorasTrabalhadas
+ir = SalarioBruto * 0.11
+inss = SalarioBruto * 0.08
+sindicato = SalarioBruto * 0.05
+
+print ("+ Salario Bruto : R$ %.2f" %SalarioBruto)
+print ("- IR: R$ %.2f" %ir )
+print ("- INSS: R$ %.2f" %inss )
+print ('- Sindicato: R$ %.2f' %sindicato )
+print ("= Salario Liquido : R$ %.2f" %(SalarioBruto - ir - inss - sindicato))

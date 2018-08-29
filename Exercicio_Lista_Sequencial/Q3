@@ -1,0 +1,3 @@
+GanhoHora=float (input("Digite o quanto ganha por Hora: "))
+HorasTrabalhadas=float (input("Digite as horas trabalhadas:"))
+print("Total do ganho mensal: R$ {}".format(GanhoHora*HorasTrabalhadas))

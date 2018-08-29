@@ -1,0 +1,7 @@
+
+Arquivo = input("Digite o tamanho do arquivo para donwload (em MB): ")
+
+Velocidade = input("Informe a velocidade de sua internet (em MBPS): ")
+Tempo = Arquivo / Velocidade
+Minuto = Tempo / 60.0
+print ("O tempo aproximado para download do arquivo usando este link eh de: %.2f minutos" %Minuto)

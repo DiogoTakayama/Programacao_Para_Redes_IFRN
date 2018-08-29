@@ -1,0 +1,11 @@
+Tam = int(input('Tamanho em metros quadrados: '))
+litros = Tam / 3
+
+if Tam % 54 == 0:
+	latas = Tam / 54
+else:
+	latas = int(Tam / 54) + 1
+
+Preco = latas * 80
+print ('%d latas' %latas)
+print ('R$ %.2f' %Preco)

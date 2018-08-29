@@ -1,0 +1,59 @@
+
+
+area = float (input("Digite a area a ser pintada: ")) # Pedir a area ao utilizador
+
+
+lata_grande = 18.0
+lata_pequena = 3.6
+preco_lata_grande = 80.0
+preco_lata_pequena = 25.0
+area_litro_tinta = 6.0
+
+tinta_necessaria = float(area)/area_litro_tinta
+if tinta_necessaria == 1:
+    print ("Vai precisar de um litro de tinta")
+elif (tinta_necessaria != 1) and (tinta_necessaria > 0):
+    print ("Vai precisar de {:.2f} litros de tinta ".format(tinta_necessaria))
+else:
+    print ("Erro!")
+
+
+print ("**Quantidade em Latas**")
+if area % 108 == 0:
+    latas = area/108
+    Preco = latas * 80
+    print ('%d latas' % latas)
+    print ('R$ %.2f' % Preco)
+
+else:
+    latas = int(area / 108) + 1
+
+    Preco = latas * 80
+    print ('%d latas' %latas)
+    print ('R$ %.2f' %Preco)
+
+    print ("**Quantidade em Galoes**")
+
+    if area < 21.6:
+	print ("Usara apenas uma lata de 3,6 Litros e pagara R$ 25,00.")
+
+if area == 21.6:
+	print ("Usara Exatamente uma lata de 3,6 Litros e pagara R$ 25,00.")
+
+if area % 21.6 == 0:
+
+        latas2 = area / 21.6
+        Preco2 = latas2 * 25
+        print ('%d Galao' % latas2)
+        print ('R$ %.2f' % Preco2)
+
+
+
+else:
+
+        latas2 = int(area / 21.6) + 1
+
+        Preco2 = latas2 * 25
+        print ('%d Galao' % latas2)
+        print ('R$ %.2f' % Preco2)
+

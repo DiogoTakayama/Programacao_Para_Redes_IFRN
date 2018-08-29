@@ -1,0 +1,11 @@
+
+Peso = int(input("Entre com o peso: "))
+
+if Peso > 50:
+	excesso = Peso - 50
+	multa   = excesso * 4
+else:
+	excesso = 0
+	multa = 0
+
+print ("O excesso de peso foi {} kg e a multa eh de R$ {}".format(excesso,multa))

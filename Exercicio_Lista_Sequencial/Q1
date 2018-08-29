@@ -1,0 +1,7 @@
+print ("Digite as 4 Notas Bimestrais: ")
+n1=float (input())
+n2=float (input())
+n3=float (input())
+n4=float (input())
+
+print ("A media Aritmetrica eh: {}".format((n1+n2+n3+n4)/4))
